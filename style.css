@@ -248,7 +248,7 @@ body {
 
 }
 
-/* Default full playbar */
+
 .playbar {
   width: 67vw;
   padding: 12px;
@@ -257,11 +257,11 @@ body {
   background: rgba(20, 20, 20, 0.6);
 }
 
-/* Mini Player button */
+
 .miniplayer-toggle {
- position: fixed;   /* ✅ keep it pinned to screen, not moving with playbar */
-  bottom: 28px;      /* distance above playbar */
-  right: 30px;       /* distance from right edge */
+ position: fixed;   
+  bottom: 28px;      
+  right: 30px;       
   background: #1db954;
   border: none;
   border-radius: 50%;
@@ -275,14 +275,14 @@ body {
   align-items: center;
   justify-content: center;
   transition: 0.3s;
-  z-index: 2000;     /* keep on top */
+  z-index: 2000;     
 }
 
 .miniplayer-toggle:hover {
   background: #1ed760;
 }
 
-/* Mini Player collapsed */
+
 .miniplayer {
   width: 280px !important;
   height: 70px;
@@ -292,7 +292,7 @@ body {
   justify-content: space-between;
 }
 
-/* Hide details in mini mode */
+
 .miniplayer .seekbar,
 .miniplayer .timevol {
   display: none;
@@ -378,21 +378,21 @@ body {
   overflow: hidden;
 }
 
-/* Hover highlight */
+
 .songlist li:hover {
   background: rgba(255,255,255,0.1);
 }
 
-/* Song icon (your music.svg) */
+
 .songlist li img {
   width: 28px;
   height: 28px;
   flex-shrink: 0;
 }
 
-/* Song info text */
+
 .songlist .info {
-  flex: 1; /* takes remaining space */
+  flex: 1; 
   overflow: hidden;
 }
 .songlist .info div {
@@ -401,10 +401,10 @@ body {
   color: white;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; /* ... when too long */
+  text-overflow: ellipsis; 
 }
 
-/* Play Now button styled as round icon */
+
 .songlist button {
   background: #1db954;
   border: none;
@@ -416,7 +416,7 @@ body {
   justify-content: center;
   cursor: pointer;
   flex-shrink: 0;
-  font-size: 0; /* hide text */
+  font-size: 0; 
 }
 
 .songlist button::before {
@@ -433,7 +433,7 @@ body {
 .seekbar {
     height: 4px;
     width: 98%;
-    background: rgba(255,255,255,0.2);  /* light background */
+    background: rgba(255,255,255,0.2);  
     border-radius: 10px;
     margin: 6px;
     cursor: pointer;
