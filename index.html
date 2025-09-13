@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="close.svg" alt="">
+            </div>
+            <div class="home  m-1 bg-grey  p-1 rounded">
+                <div class="logo"><img width="130" class="invert" src="logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>Your Library
+
+                    </h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                       
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right bg-grey rounded ">
+            <div class="header rounded">
+                <div class="hamburgercont">
+                    <div class="nav">
+
+                        <img width="60px" class="invert hamburger" src="hamburger.svg" alt="">
+
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="searchbar">
+                    <input type="text" placeholder="Search songs, artists..." id="searchInput">
+                </div>
+
+                <div class="buttons">
+
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div data-folder="Pritam" class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (394).png" alt="">  
+                        <h2>Pritam</h2>
+                        <p>Pritam Daily Hits </p>
+                    </div>
+                    <div data-folder="old_hits" class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (395).png" alt="">
+                        <h2>80's Daily Hits</h2>
+                        <p>Only For You</p>
+                    </div>
+                    <div data-folder="Shreya_Ghosal" class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (396).png" alt="">
+                        <h2>Shreya Ghosal</h2>
+                        <p>Best of Shreya Ghosal</p>
+                    </div>
+                    <div data-folder="Kishore_Kumar" class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="data:image/jpeg;base64,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" alt="">
+                        <h2>Kishore Kumar</h2>
+                        <p>All Time Hits</p>
+                    </div>
+                    <div data-folder="nfak" class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273819bac488ad3cfb5af7fbb7c" alt="">
+                        <h2>NFAK sahab</h2>
+                        <p>NFAK Sahab Daily Hits</p>
+                    </div>
+                    <div  data-folder="Hariyanvi"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (397).png" alt="">  
+                        <h2>Hariyanvi Hits</h2>
+                        <p>catch all the top hits</p>
+                    </div>
+                  
+                    <div  data-folder="diljit_dosanjh"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/CodeWithHarry/Sigma-Web-Dev-Course/refs/heads/main/Video%2084%20-%20Project%202%20-%20Spotify%20Clone/songs/Diljit/cover.jpg" alt="">
+                        <h2>Diljit Dosanjh</h2>
+                        <p>Diljit Dosanjh Hits</p>
+                    </div>
+                  
+                    <div  data-folder="Masoom_Sharma"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (398).png" alt="">
+                        <h2>Masoom Sharma</h2>
+                        <p>Masoom Sharma Hits</p>
+                    </div>
+                  
+                    <div  data-folder="Jagjit_Singh"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (399).png" alt="">
+                        <h2>Jagjit Singh</h2>
+                        <p>Refresh your soul</p>
+                    </div>
+                  
+                    <div  data-folder="Aashiqui_2"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (400).png" alt="">
+                        <h2>Aashiqui 2</h2>
+                        <p>Aashiqui 2 songs</p>
+                    </div>
+                  
+                    <div  data-folder="Shubh"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (401).png" alt="">
+                        <h2>Shubh</h2>
+                        <p>Banger</p>
+                    </div>
+                  
+                    <div  data-folder="Filmy_Hangover"  class="card ">
+                        <div class="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="Screenshot (402).png" alt="">
+                        <h2>Filmy Hangover</h2>
+                        <p>Soothe your hangover</p>
+                    </div>
+                  
+                </div>
+                <div class="playbar-container">
+                  <div class="playbar">
+                    <div class="seekbar">
+                        <div class="progress"></div>
+                       <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+                      <div class="songinfo"></div>
+                      <div class="songbuttons invert">
+                        <img width="30px" id="previous" src="prevsong.svg" alt="">
+                        <img width="30px" id="play" src="play.svg" alt="">
+                        <img width="30px" id="next" src="nextsong.svg" alt="">
+                     </div>
+                    <div class="timevol">
+                       <div class="songtime"></div>
+                        <div class="volume invert">
+                          <img src="volume.svg" alt="">
+                          <div class="range">
+                             <input type="range" name="volume" id="">
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                 </div>
+                  <button class="miniplayer-toggle">⇲</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

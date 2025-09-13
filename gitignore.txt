@@ -1,0 +1,12 @@
+# Ignore system files
+.DS_Store
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore audio files
+songs/*.mp3
+
+# Ignore test files
+*.txt
+.DS_Store
