@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
     return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
 }
 
-//  this is for Fetching songs from a folder
+
 async function getsongs(folder) {
     currfolder = folder;
     let a = await fetch(`/${folder}/`);
@@ -37,7 +37,7 @@ async function getsongs(folder) {
         }
     }
 
-    // function for  Populate library
+    
     let songUL = document.querySelector(".songlist ul");
     songUL.innerHTML = "";
     for (const song of songs) {
@@ -203,20 +203,20 @@ document.querySelector(".seekbar").addEventListener("click", e => {
    document.getElementById("searchInput").addEventListener("input", function () {
     let query = this.value.toLowerCase();
 
-    // 🔍 Filter songs in the left library
+    
     let songsList = document.querySelectorAll(".songlist li");
     songsList.forEach(song => {
         let songName = song.querySelector(".info div").innerText.toLowerCase();
         song.style.display = songName.includes(query) ? "" : "none";
     });
 
-    // 🔍 Filter playlist cards on the right
+    
     let cards = document.querySelectorAll(".cardContainer .card");
     cards.forEach(card => {
         let cardTitle = card.querySelector("h2").innerText.toLowerCase();
         let cardDesc = card.querySelector("p").innerText.toLowerCase();
         
-        // show card if query matches title OR description
+        
         if (cardTitle.includes(query) || cardDesc.includes(query)) {
             card.style.display = "";
         } else {
@@ -234,10 +234,10 @@ toggleBtn.addEventListener("click", () => {
     mini = !mini;
     if (mini) {
         playbarContainer.classList.add("miniplayer");
-        toggleBtn.innerText = "⇱"; // expand icon
+        toggleBtn.innerText = "⇱"; 
     } else {
         playbarContainer.classList.remove("miniplayer");
-        toggleBtn.innerText = "⇲"; // collapse icon
+        toggleBtn.innerText = "⇲"; 
     }
 });
 
